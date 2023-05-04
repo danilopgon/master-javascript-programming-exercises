@@ -1,5 +1,10 @@
 function addToFrontOfNew(arr, element) {
     // Write your function here
+    let newArr = [...arr]
+
+    newArr.unshift(element);
+
+    return newArr;
     
 }
 

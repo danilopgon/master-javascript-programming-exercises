@@ -3,7 +3,15 @@ let obj = {
 };
 
 function getSquaredElementsAtProperty(obj, key) {
-    // your code here
+  // your code here
+  let newArr = []
+
+  if (obj.hasOwnProperty(key) && Array.isArray(obj[key]) && obj[key].length !== 0) {
+    newArr = obj[key].map(element => Math.pow(element, 2));
+  }
+
+  return newArr
+
 }
 
 let output = getSquaredElementsAtProperty(obj, 'key');

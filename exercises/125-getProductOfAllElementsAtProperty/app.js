@@ -4,6 +4,7 @@ let obj = {
 
 function getProductOfAllElementsAtProperty(obj, key) {
     // your code here
+    
 }
 let output = getProductOfAllElementsAtProperty(obj, 'key');
 console.log(output); // --> 24
